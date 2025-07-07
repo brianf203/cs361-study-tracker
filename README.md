@@ -1,1 +1,1 @@
-# cs361-study-tracker
+# CS361 Study Tracker
