@@ -1,0 +1,17 @@
+{
+    "brian": {
+        "password": "1234",
+        "subjects": [
+            "Math",
+            "History",
+            "writing"
+        ],
+        "sessions": [
+            {
+                "subject": "math",
+                "duration": "1hr",
+                "timestamp": "2025-07-28 19:47:12"
+            }
+        ]
+    }
+}
