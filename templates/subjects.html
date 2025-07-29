@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Subjects</title></head>
+<body>
+  <h2>Manage Subjects</h2>
+  <form method="POST">
+    <input name="subject" required placeholder="Subject name">
+    <button type="submit" name="action" value="add">Add</button>
+    <button type="submit" name="action" value="remove">Remove</button>
+  </form>
+  <ul>
+    {% for subject in subjects %}
+      <li>{{ subject }}</li>
+    {% endfor %}
+  </ul>
+  <a href="/dashboard">Back</a>
+</body>
+</html>

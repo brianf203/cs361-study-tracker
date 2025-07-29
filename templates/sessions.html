@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Sessions</title></head>
+<body>
+  <h2>Study Sessions</h2>
+  <form method="POST">
+    Subject: <input name="subject" required><br>
+    Duration (e.g. 1h 30m): <input name="duration" required><br>
+    <button type="submit">Log Session</button>
+  </form>
+  <ul>
+    {% for s in sessions %}
+      <li>{{ s.timestamp }} - {{ s.subject }} - {{ s.duration }}</li>
+    {% endfor %}
+  </ul>
+  <a href="/dashboard">Back</a>
+</body>
+</html>
